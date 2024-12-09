@@ -30,9 +30,13 @@ html, body {
     width: 50%;
     border-radius: 5px;
 }
+.modalInfo {
+    font-size: large;
+    font-weight: bold;
+}
 #modalImage {
     width: 100%;  /* The image will take up the full width of the modal */
-    max-width: 400px;  /* Limits the maximum width of the image */
+    max-width: 300px;  /* Limits the maximum width of the image */
     height: auto; /* Maintain the aspect ratio of the image */
     display: block;  /* Ensures it behaves as a block element */
     margin: 0 auto; /* Center the image */

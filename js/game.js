@@ -1,80 +1,171 @@
 
 const bookOfMormonCharacters = [
 	{
-	  name: "Nephi",
-	  description: "Nephi was the son of Lehi, a prophet, and the founder of the Nephite nation. Known for his obedience and faith, he built a ship to lead his family to the promised land and authored much of the early Book of Mormon record. Nephi exemplified unwavering trust in God despite facing persecution from his brothers.",
-	  quote: "1 Nephi 3:7 - 'I will go and do the things which the Lord hath commanded.'"
+		name: "Nephi",
+		description: "Nephi was the son of Lehi, a prophet, and the founder of the Nephite nation. Known for his obedience and faith, he built a ship to lead his family to the promised land and authored much of the early Book of Mormon record. Nephi exemplified unwavering trust in God despite facing persecution from his brothers.",
+		quotes: [
+			"1 Nephi 3:7 - 'I will go and do the things which the Lord hath commanded.'",
+			"2 Nephi 2:25 - 'Adam fell that men might be; and men are, that they might have joy.'",
+			"2 Nephi 5:27 - 'And it came to pass that we lived after the manner of happiness.'"
+		]
 	},
 	{
-	  name: "Lehi",
-	  description: "Lehi was a prophet who led his family out of Jerusalem after receiving a vision of its destruction. He taught his children about the gospel, the plan of salvation, and the importance of keeping God's commandments. His teachings laid the spiritual foundation for generations.",
-	  quote: "1 Nephi 1:20 - 'I, Lehi, have seen many things, yea, great and marvelous things.'"
+		name: "Lehi",
+		description: "Lehi was a prophet who led his family out of Jerusalem after receiving a vision of its destruction. He taught his children about the gospel, the plan of salvation, and the importance of keeping God's commandments. His teachings laid the spiritual foundation for generations.",
+		quotes: [
+			"1 Nephi 1:20 - 'I, Lehi, have seen many things, yea, great and marvelous things.'",
+			"2 Nephi 2:6 - 'Wherefore, redemption cometh in and through the Holy Messiah.'",
+			"2 Nephi 2:27 - 'Men are free according to the flesh; and all things are given them which are expedient unto man.'"
+		]
 	},
 	{
-	  name: "Jacob",
-	  description: "Jacob, the younger brother of Nephi, was a prophet who focused on teaching about the Atonement, the covenants of the Lord, and social equality. His ministry included rebuking pride and immorality among the Nephites.",
-	  quote: "Jacob 4:4 - 'We knew of Christ, and we had a hope of his glory many hundred years before his coming.'"
+		name: "Jacob",
+		description: "Jacob, the younger brother of Nephi, was a prophet who focused on teaching about the Atonement, the covenants of the Lord, and social equality. His ministry included rebuking pride and immorality among the Nephites.",
+		quotes: [
+			"Jacob 4:4 - 'We knew of Christ, and we had a hope of his glory many hundred years before his coming.'",
+			"Jacob 2:18 - 'Before ye seek for riches, seek ye for the kingdom of God.'",
+			"Jacob 4:7 - 'The Lord God showeth us our weakness that we may know that it is by his grace we have power.'"
+		]
 	},
 	{
-	  name: "Enos",
-	  description: "Enos, the son of Jacob, is remembered for his earnest prayer and the spiritual transformation that followed. His experience demonstrates the power of seeking forgiveness and maintaining a relationship with God.",
-	  quote: "Enos 1:5 - 'Thy sins are forgiven thee, and thou shalt be blessed.'"
+		name: "Enos",
+		description: "Enos, the son of Jacob, is remembered for his earnest prayer and the spiritual transformation that followed. His experience demonstrates the power of seeking forgiveness and maintaining a relationship with God.",
+		quotes: [
+			"Enos 1:5 - 'Thy sins are forgiven thee, and thou shalt be blessed.'",
+			"Enos 1:15 - 'Whatsoever thing ye shall ask in faith, believing that ye shall receive in the name of Christ, ye shall receive it.'",
+			"Enos 1:27 - 'I shall see his face with pleasure, and he will say unto me: Come unto me, ye blessed.'"
+		]
 	},
 	{
-	  name: "Mosiah",
-	  description: "King Mosiah was a righteous leader who governed with wisdom and translated the Jaredite plates. He established a system of judges to govern the Nephites, ensuring liberty and justice. He taught his people the value of service.",
-	  quote: "Mosiah 2:18 - 'I, Mosiah, have not sought gold nor silver of you.'"
+		name: "Mosiah",
+		description: "King Mosiah was a righteous leader who governed with wisdom and translated the Jaredite plates. He established a system of judges to govern the Nephites, ensuring liberty and justice. He taught his people the value of service.",
+		quotes: [
+			"Mosiah 2:18 - 'I, Mosiah, have not sought gold nor silver of you.'",
+			"Mosiah 2:17 - 'When ye are in the service of your fellow beings ye are only in the service of your God.'",
+			"Mosiah 29:26 - 'It is not common that the voice of the people desireth anything contrary to that which is right.'"
+		]
 	},
 	{
-	  name: "Alma the Younger",
-	  description: "Initially a rebellious youth, Alma the Younger was visited by an angel and converted to the gospel. He became a prophet and missionary, preaching repentance and organizing the church. His conversion story remains one of the most dramatic in the Book of Mormon.",
-	  quote: "Alma 36:24 - 'I have labored without ceasing, that I might bring souls unto repentance.'"
+		name: "Alma the Younger",
+		description: "Initially a rebellious youth, Alma the Younger was visited by an angel and converted to the gospel. He became a prophet and missionary, preaching repentance and organizing the church. His conversion story remains one of the most dramatic in the Book of Mormon.",
+		quotes: [
+		  "Alma 36:24 - 'I have labored without ceasing, that I might bring souls unto repentance.'",
+		  "Alma 29:9 - 'I know that which the Lord hath commanded me, and I glory in it.'",
+		  "Alma 38:9 - 'Jesus Christ, the Son of God, who shall come to redeem his people from their sins.'"
+		]
+	  },
+	  {
+		name: "Ammon",
+		description: "Ammon, one of the sons of Mosiah, was a missionary who served among the Lamanites. He won their trust by defending King Lamoni's flocks and taught them about Christ, leading to the conversion of thousands.",
+		quotes: [
+		  "Alma 26:12 - 'Yea, I know that I am nothing; as to my strength I am weak.'",
+		  "Alma 17:29 - 'I will go and defend the flocks of the king unto the servants.'",
+		  "Alma 26:35 - 'Blessed be the name of my God, who has been mindful of this people.'"
+		]
+	  },
+	  {
+		name: "Captain Moroni",
+		description: "Captain Moroni was a military leader and devout defender of freedom. He is famous for creating the 'Title of Liberty,' rallying the Nephites to protect their families and faith. His leadership was pivotal during times of war.",
+		quotes: [
+		  "Alma 46:12 - 'In memory of our God, our religion, and freedom.'",
+		  "Alma 48:17 - 'If all men had been, and were, and ever would be, like unto Moroni.'",
+		  "Alma 60:36 - 'The Lord will not suffer that we shall perish.'"
+		]
+	  },
+	  {
+		name: "Helaman",
+		description: "Helaman, the son of Alma, was a prophet and military leader. He commanded the two thousand stripling warriors, young men whose faith and obedience led to miraculous protection in battle.",
+		quotes: [
+		  "Alma 56:46 - 'Behold our God is with us, and he will not suffer that we shall fall.'",
+		  "Alma 57:21 - 'They did obey and observe to perform every word of command with exactness.'",
+		  "Alma 58:11 - 'The Lord did visit us with assurances that he would deliver us.'"
+		]
+	  },
+	  {
+		name: "Samuel the Lamanite",
+		description: "Samuel was a Lamanite prophet who climbed the walls of Zarahemla to preach repentance and prophesy of Christ's coming. Despite being rejected and attacked, he courageously delivered his message.",
+		quotes: [
+		  "Helaman 13:5 - 'Thus saith the Lord: Blessed are they who will repent.'",
+		  "Helaman 14:2 - 'Five years more cometh the Son of God.'",
+		  "Helaman 15:7 - 'Faith and repentance bringeth a change of heart unto them.'"
+		]
+	  },
+	  {
+		name: "Abinadi",
+		description: "Abinadi was a bold prophet who preached repentance to King Noah and his priests. Despite facing death, he fearlessly testified of Christ and the plan of salvation. His words influenced Alma, who became a great prophet.",
+		quotes: [
+		  "Mosiah 13:28 - 'Salvation doth not come by the law alone; and were it not for the atonement, which God himself shall make, there could be no redemption.'",
+		  "Mosiah 12:27 - 'Ye have not applied your hearts to understanding.'",
+		  "Mosiah 14:3 - 'He is despised and rejected of men; a man of sorrows, and acquainted with grief.'"
+		]
+	  },
+	  {
+		name: "Mormon",
+		description: "Mormon was a prophet and military leader who compiled the Book of Mormon from ancient records. Despite leading the Nephites during their decline, he remained faithful to God and recorded his people's history for future generations.",
+		quotes: [
+		  "Mormon 3:12 - 'I did stand as an idle witness to manifest unto the world the things which I saw and heard.'",
+		  "Mormon 8:37 - 'I perceive that the great destruction which one day shall come upon the Nephites is near at hand.'",
+		  "Mormon 7:7 - 'Ye may be a light unto this people.'"
+		]
+	  },
+	  {
+		name: "Moroni",
+		description: "Moroni, the son of Mormon, was the last prophet of the Nephite civilization. He finished the record, wrote his own testimony, and buried the gold plates. Moroni later appeared to Joseph Smith as an angel to guide the restoration of the gospel.",
+		quotes: [
+		  "Moroni 10:4 - 'I would exhort you that ye would ask God, the Eternal Father, in the name of Christ, if these things are not true.'",
+		  "Moroni 10:32 - 'Come unto Christ, and be perfected in him.'",
+		  "Moroni 7:47 - 'But charity is the pure love of Christ, and it endureth forever.'"
+		]
+	  },
+	{
+		name: "Brother of Jared",
+		description: "The brother of Jared, also known as Mahonri Moriancumer, was a great Jaredite prophet known for his remarkable faith. He saw the Lord and received instructions to lead his people to the promised land.",
+		quotes: [
+			"And the Lord said: Go to work and build, after the manner of barges which ye have hitherto built. Ether 2:16",
+			"And he had faith no longer, for he knew, nothing doubting. Ether 3:19",
+			"And when he had said these words, behold, the Lord stretched forth his hand and touched the stones one by one with his finger. Ether 3:6"
+		]
 	},
 	{
-	  name: "Ammon",
-	  description: "Ammon, one of the sons of Mosiah, was a missionary who served among the Lamanites. He won their trust by defending King Lamoni's flocks and taught them about Christ, leading to the conversion of thousands.",
-	  quote: "Alma 26:12 - 'Yea, I know that I am nothing; as to my strength I am weak.'"
-	},
-	{
-	  name: "Captain Moroni",
-	  description: "Captain Moroni was a military leader and devout defender of freedom. He is famous for creating the 'Title of Liberty,' rallying the Nephites to protect their families and faith. His leadership was pivotal during times of war.",
-	  quote: "Alma 46:12 - 'In memory of our God, our religion, and freedom.'"
-	},
-	{
-	  name: "Helaman",
-	  description: "Helaman, the son of Alma, was a prophet and military leader. He commanded the two thousand stripling warriors, young men whose faith and obedience led to miraculous protection in battle.",
-	  quote: "Alma 56:46 - 'Behold our God is with us, and he will not suffer that we shall fall.'"
-	},
-	{
-	  name: "Samuel the Lamanite",
-	  description: "Samuel was a Lamanite prophet who climbed the walls of Zarahemla to preach repentance and prophesy of Christ's coming. Despite being rejected and attacked, he courageously delivered his message.",
-	  quote: "Helaman 13:5 - 'Thus saith the Lord: Blessed are they who will repent.'"
-	},
-	// {
-	//   name: "Mormon",
-	//   description: "Mormon was a prophet and military leader who compiled the Book of Mormon from ancient records. Despite leading the Nephites during their decline, he remained faithful to God and recorded his people's history for future generations.",
-	//   quote: "Mormon 3:12 - 'I did stand as an idle witness to manifest unto the world the things which I saw and heard.'"
-	// },
-	// {
-	//   name: "Moroni",
-	//   description: "Moroni, the son of Mormon, was the last prophet of the Nephite civilization. He finished the record, wrote his own testimony, and buried the gold plates. Moroni later appeared to Joseph Smith as an angel to guide the restoration of the gospel.",
-	//   quote: "Moroni 10:4 - 'I would exhort you that ye would ask God, the Eternal Father, in the name of Christ, if these things are not true.'"
-	// },
-	// {
-	//   name: "Ether",
-	//   description: "Ether, the last Jaredite prophet, warned his people of destruction if they did not repent. He witnessed the downfall of his civilization and recorded their tragic history as a testimony to future generations.",
-	//   quote: "Ether 12:38 - 'Whether the Lord will that I be translated, or that I suffer the will of the Lord in the flesh, it mattereth not.'"
-	// },
-	{
-	  name: "Abinadi",
-	  description: "Abinadi was a bold prophet who preached repentance to King Noah and his priests. Despite facing death, he fearlessly testified of Christ and the plan of salvation. His words influenced Alma, who became a great prophet.",
-	  quote: "Mosiah 13:28 - 'Salvation doth not come by the law alone; and were it not for the atonement, which God himself shall make, there could be no redemption.'"
-	},
-	// {
-	//   name: "Teancum",
-	//   description: "Teancum was a valiant Nephite captain known for his tactical skill and personal bravery. He was instrumental in defending the Nephites against Lamanite aggression and sacrificed his life in an attempt to stop Ammoron.",
-	//   quote: "Alma 62:37 - 'Teancum did pursue them in their retreat, and did slay the king.'"
-	// }
+        name: "Sherem",
+        description: "An Antichrist who confronted Jacob, denying Christ and seeking to shake Jacob’s faith.",
+        quotes: [
+            "Brother Jacob, I have sought much opportunity that I might speak unto you. (Jacob 7:6)",
+            "There should be no Christ; for no man can tell of things to come. (Jacob 7:7)",
+        ]
+    },
+    {
+        name: "Amalickiah",
+        description: "A Nephite dissenter who became a Lamanite king through treachery, seeking to destroy Nephite liberty.",
+        quotes: [
+            "He did appoint men to speak unto the Lamanites from their towers, against the Nephites. (Alma 48:1)",
+            "If you will lay down your arms, and subject yourselves to be governed by those whom I have appointed, then you shall be spared. (Alma 51:20)",
+        ]
+    },
+    {
+        name: "Giddianhi",
+        description: "A leader of the Gadianton robbers who demanded Nephite surrender and led an attack against them.",
+        quotes: [
+            "Yield yourselves up unto us, and unite with us and become acquainted with our secret works, and become our brethren. (3 Nephi 3:7)",
+            "I will avenge my people of their wrongs. (3 Nephi 4:14)",
+        ]
+    },
+    {
+        name: "Korihor",
+        description: "An Antichrist who preached against Christ and denied the existence of God, eventually being struck dumb.",
+        quotes: [
+            "O ye that are bound down under a foolish and a vain hope, why do ye yoke yourselves with such foolish things? (Alma 30:13)",
+            "I do not deny the existence of a God, but I do not believe that there is a God. (Alma 30:37)",
+        ]
+    },
+    {
+        name: "Zeezrom",
+        description: "A lawyer who initially opposed Alma and Amulek but later repented and became a faithful missionary.",
+        quotes: [
+            "Behold, here are six onties of silver, and all these will I give thee if thou wilt deny the existence of a Supreme Being. (Alma 11:22)",
+            "Is there more than one God? (Alma 11:28)",
+        ]
+    }
   ];
   
   /**
@@ -269,38 +360,38 @@ const bookOfMormonCharacters = [
 	  if (!paused) {
 		// Add more trees and increase the difficulty.
 		if (objects[objects.length - 1].mesh.position.z % 3000 == 0) {
-		  difficulty += 1;
+		  difficulty += 2;
 		  var levelLength = 30;
 		  if (difficulty % levelLength == 0) {
 			var level = difficulty / levelLength;
 			switch (level) {
 			  case 1:
-				treePresenceProb = 0.95;
+				treePresenceProb = 0.35;
 				maxTreeSize = 0.5;
 				break;
 			  case 2:
 				treePresenceProb = 0.35;
-				maxTreeSize = 0.85;
+				maxTreeSize = 0.65;
 				break;
 			  case 3:
 				treePresenceProb = 0.5;
-				maxTreeSize = 0.85;
+				maxTreeSize = 0.65;
 				break;
 			  case 4:
 				treePresenceProb = 0.5;
-				maxTreeSize = 1.1;
+				maxTreeSize = .7;
 				break;
 			  case 5:
 				treePresenceProb = 0.5;
-				maxTreeSize = 1.1;
+				maxTreeSize = .7;
 				break;
 			  case 6:
 				treePresenceProb = 0.55;
-				maxTreeSize = 1.1;
+				maxTreeSize = .7;
 				break;
 			  default:
 				treePresenceProb = 0.55;
-				maxTreeSize = 1.25;
+				maxTreeSize = .7;
 			}
 		  }
 		  if (difficulty >= 5 * levelLength && difficulty < 6 * levelLength) {
@@ -483,13 +574,14 @@ const bookOfMormonCharacters = [
     // Find the modal and modal info element
     var modal = document.getElementById("collisionModal");
     var modalInfo = document.getElementById("modalInfo");
+	var modalDescription = document.getElementById("modalDescription");
+    var modalQuote = document.getElementById("modalQuote");
     var modalImage = document.getElementById("modalImage"); // Assuming you have an image element in your modal
 
     // Set the modal info based on randomNumber
-    modalInfo.textContent = "You ran into " + bookOfMormonCharacters[randomNumber].name + "!\n\n" + 
-                            bookOfMormonCharacters[randomNumber].description + "\n\n" + 
-                            bookOfMormonCharacters[randomNumber].quote;
-
+    modalInfo.textContent = "You ran into " + bookOfMormonCharacters[randomNumber].name + "!";
+	modalDescription.textContent = bookOfMormonCharacters[randomNumber].description;
+	modalQuote.textContent = bookOfMormonCharacters[randomNumber].quotes[Math.floor(Math.random() * bookOfMormonCharacters[randomNumber].quotes.length)];
     // Set the image based on the character's randomNumber
     modalImage.src = "bomImages/" + bookOfMormonCharacters[randomNumber].name + ".jpg";  // Ensure you have the correct path for your images
     modalImage.alt = bookOfMormonCharacters[randomNumber].name; // Set alt text for accessibility
