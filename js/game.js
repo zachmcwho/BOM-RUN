@@ -341,15 +341,16 @@ const bookOfMormonCharacters = [
 			"Game over! Press the down arrow to try again.";
 		  var table = document.getElementById("ranks");
 		  var rankNames = [
-			"Typical Engineer",
-			"Couch Potato",
-			"Weekend Jogger",
-			"Daily Runner",
-			"Local Prospect",
-			"Regional Star",
-			"National Champ",
-			"Second Mo Farah",
-		  ];
+			"Common Citizen of Zarahemla",
+			"Lamanite Convert",
+			"Faithful Stripling Warrior",
+			"Daily Disciple of Nephi",
+			"Local Preacher of Ammon",
+			"Regional Captain of Moroni",
+			"Prophet's Trusted Counselor",
+			"Champion of the Title of Liberty",
+		];
+		
 		  var rankIndex = Math.floor(score / 15000);
   
 		  // If applicable, display the next achievable rank.
@@ -477,30 +478,39 @@ const bookOfMormonCharacters = [
 	}
   }
   function openModal(randomNumber) {
-	console.log("made it to OpenModal")
-	// Find the modal and the modal info element
-	var modal = document.getElementById("collisionModal");
-	var modalInfo = document.getElementById("modalInfo");
-  
-	// Set the modal info based on randomNumber
-	modalInfo.textContent = "Collision detected! Info: " + randomNumber;
-  
-	// Show the modal
-	modal.style.display = "block";
-  
-	// Close the modal when the close button is clicked
-	var closeBtn = document.querySelector(".close-btn");
-	closeBtn.onclick = function() {
-	  modal.style.display = "none";
-	}
-  
-	// Close the modal when clicking outside the modal content
-	window.onclick = function(event) {
-	  if (event.target === modal) {
-		modal.style.display = "none";
-	  }
-	}
-  }
+    console.log("made it to OpenModal");
+
+    // Find the modal and modal info element
+    var modal = document.getElementById("collisionModal");
+    var modalInfo = document.getElementById("modalInfo");
+    var modalImage = document.getElementById("modalImage"); // Assuming you have an image element in your modal
+
+    // Set the modal info based on randomNumber
+    modalInfo.textContent = "You ran into " + bookOfMormonCharacters[randomNumber].name + "!\n\n" + 
+                            bookOfMormonCharacters[randomNumber].description + "\n\n" + 
+                            bookOfMormonCharacters[randomNumber].quote;
+
+    // Set the image based on the character's randomNumber
+    modalImage.src = "bomImages/" + bookOfMormonCharacters[randomNumber].name + ".jpg";  // Ensure you have the correct path for your images
+    modalImage.alt = bookOfMormonCharacters[randomNumber].name; // Set alt text for accessibility
+	console.log(modalImage.src)
+    // Show the modal
+    modal.style.display = "block";
+
+    // Close the modal when the close button is clicked
+    var closeBtn = document.querySelector(".close-btn");
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Close the modal when clicking outside the modal content
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
   /**
    *
    * IMPORTANT OBJECTS
